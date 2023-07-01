@@ -10,7 +10,7 @@ const Sidebar = () => {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 h-6 rounded-full fill-white"
+              className="w-6 h-6 rounded-full fill-white"
             >
               <path
                 stroke-linecap="round"
@@ -27,7 +27,7 @@ const Sidebar = () => {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 h-6 fill-white"
+              className="w-6 h-6 fill-white"
             >
               <path
                 stroke-linecap="round"
@@ -45,7 +45,7 @@ const Sidebar = () => {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 h-6"
+              className="w-6 h-6"
             >
               <path
                 stroke-linecap="round"
@@ -62,7 +62,7 @@ const Sidebar = () => {
               viewBox="0 0 24 24"
               stroke-width="6.5"
               stroke="currentColor"
-              class="w-3 h-3 "
+              className="w-3 h-3 "
             >
               <path
                 stroke-linecap="round"
@@ -80,7 +80,7 @@ const Sidebar = () => {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 h-6"
+              className="w-6 h-6"
             >
               <path
                 stroke-linecap="round"
