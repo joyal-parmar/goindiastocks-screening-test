@@ -39,7 +39,7 @@ const DisscussionFourm = () => {
               />
             </div>
           </div>
-          <div className="md:h-96 overflow-auto flex flex-col gap-2 pr-1 sm:h-full ">
+          <div className="lg:h-96 overflow-auto flex flex-col gap-2 pr-1 md:h-full ">
             {Data.map((data) => {
               return (
                 <>
