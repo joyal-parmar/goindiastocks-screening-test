@@ -32,13 +32,13 @@ export default function Home() {
       <Head>
         <title>GoIndiaStocks</title>
       </Head>
-      <div className="flex flex-col">
+      <div className="flex flex-col ">
         <Navbar />
         <Stock />
         <div>
           <FeaturedCompanies />
         </div>
-        <div className="flex flex-row lg:hidden md:block bg-blue-950 text-white font-bold ">
+        <div className="flex flex-row md:hidden sm:block bg-blue-950 text-white font-bold ">
           <div className="flex flex-row justify-between">
             <button
               className="w-full h-full pt-2 pb-2 hover:bg-slate-900"
@@ -89,12 +89,12 @@ export default function Home() {
           </div>
           <div className="grow flex flex-row justify-evenly h-full">
             <div
-              className={`${showMarketstories ? "md:hidden lg:block" : "none"}`}
+              className={`${showMarketstories ? "sm:hidden md:block" : "none"}`}
             >
               <DisscussionFourm />
             </div>
 
-            <div className={`${showFourm ? "md:hidden lg:block" : "none"}`}>
+            <div className={`${showFourm ? "sm:hidden md:block" : "none"}`}>
               {" "}
               <MarketStories />
             </div>
