@@ -1,13 +1,13 @@
 import Marquee from "react-fast-marquee";
-import Records from "./marketrecords.json";
+import StockRecords from "./Stockrecords.json";
 
-const Marketadd = () => {
+const Stock = () => {
   return (
     <>
     <Marquee direction="right">
       
         <div className="flex flex-row gap-4">
-          {Records.map((records) => {
+          {StockRecords.map((records) => {
             return (
               <>
                 <div className="flex flex-row gap-6">
@@ -24,4 +24,4 @@ const Marketadd = () => {
     </>
   );
 };
-export default Marketadd;
+export default Stock;

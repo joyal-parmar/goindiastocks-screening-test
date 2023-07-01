@@ -1,74 +1,33 @@
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import FeaturecompanyData from "./FeaturecompanyData.json";
 
 const FeaturedCompanies = () => {
   return (
     <>
-      <div className="flex flex-col bg-white">
-        <div className="text-red-500 p-3 font-bold">FEATURED COMPANIES</div>
-        <div className="bg-sky-100 p-2 flex flex-row">
+      <div className="flex flex-col bg-gray-100 ">
+        <div className="text-red-500 p-3 font-bold hidden lg:block">
+          FEATURED COMPANIES
+        </div>
+        <div className="lg:bg-sky-100 md:bg-white p-2 flex flex-row">
           <Marquee direction="left">
-          
-            <div className="bg-sky-100 flex flex-row gap-16">
-              <Image
-                src="/caprinew1.jpg"
-                width="100"
-                height="100"
-                className="bg-sky-100"
-              />
-
-              <Image
-                src="/ganeshhousing.jpg"
-                width="100"
-                height="100"
-                className="bg-sky-100"
-              />
-              <Image
-                src="/fino.png"
-                width="100"
-                height="100"
-                className="bg-sky-100"
-              />
-              <Image
-                src="/gravita.jpg"
-                width="100"
-                height="100"
-                className="bg-sky-100"
-              />
-              <Image
-                src="/godawari.jpg"
-                width="100"
-                height="100"
-                className="bg-sky-100"
-              />
-              <Image
-                src="/dtpatten1.png"
-                width="100"
-                height="100"
-                className="bg-sky-100"
-              />
-              <Image
-                src="/deepind.png"
-                width="100"
-                height="100"
-                className="bg-sky-100"
-              />
-              <Image
-                src="/caprinew1.jpg"
-                width="100"
-                height="100"
-                className="bg-sky-100"
-              />
-
-              <Image
-                src="/ganeshhousing.jpg"
-                width="100"
-                height="100"
-                className="bg-sky-100"
-              />
+            <div className=" flex flex-row gap-16 ">
+              {FeaturecompanyData.map((data) => {
+                return (
+                  <>
+                    <div className="">
+                      <Image
+                        src={data.imgsrc}
+                        width="90"
+                        height="110"
+                        className="object-cover lg:p-0 md:pt-5 md:pb-5 lg:rounded-none lg:border-none md:rounded-full md:border-2 md:border-red-700"
+                      />
+                    </div>
+                  </>
+                );
+              })}
             </div>
-            </Marquee>
-         
+          </Marquee>
         </div>
       </div>
     </>
